@@ -3,11 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="/Styles/style.css" href="stylesheet" />
+    <link rel="stylesheet" href="/styles/style.css" />
     <title>Screen Game</title>
   </head>
   <body>
-    <header></header>
-    <script src="/Scripts/script.js" defer></script>
+    <div class="wrapper">
+      <header>
+        <h1 id="game_title">Game</h1>
+      </header>
+      <main>
+        <div id="game_board">
+          <!-- List all players -->
+          <div id="player_list" class="score"></div>
+
+          <!-- Enter player name section -->
+          <div class="player_input">
+            <input
+              type="text"
+              id="player_name"
+              placeholder="Enter player name"
+            />
+            <button id="join_button">Join</button>
+          </div>
+
+          <!-- Game buttons -->
+          <div class="game_button">
+            <button id="start_button">Start Game</button>
+            <button id="switch_button">Next Player</button>
+            <button id="point_button">Add Point</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="/scripts/script.js" defer></script>
   </body>
 </html>

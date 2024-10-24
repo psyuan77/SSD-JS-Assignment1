@@ -1,1 +1,71 @@
 @charset "utf-8";
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  background-color: pink;
+  border-radius: 20px;
+}
+
+#game_title {
+  color: rgb(43, 139, 223);
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+#game_board {
+  text-align: left;
+  background-color: rgb(202, 194, 194);
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 1fr 3rem 5.4fr;
+  gap: 20px;
+}
+
+#player_list {
+  width: 100%;
+  height: 60px;
+  background-color: pink;
+  padding-top: 20px;
+  font-size: 10px;
+}
+
+input {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid white;
+  text-align: center;
+  margin-left: 20px;
+}
+.player_input {
+  margin-left: 10px;
+}
+.game_button {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  height: max-content;
+  margin-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+button {
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+  background-color: lightgrey;
+  border: 0;
+  color: rgb(43, 139, 223);
+  font-size: large;
+}
+#join_button {
+  width: fit-content;
+  border-radius: 10px;
+  font-size: larger;
+  background-color: blanchedalmond;
+}
